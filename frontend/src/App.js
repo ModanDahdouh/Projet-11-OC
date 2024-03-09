@@ -7,13 +7,14 @@ import Error from "./pages/Error/Error";
 
 function App() {
     const token = useSelector((state) => state.auth.token);
+
     return (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Signin" element={<Signin />} />
             <Route
                 path="/user"
-                element={token ? <User /> : <Navigate to="/Signin" />}
+                element={token ? <User /> : <Navigate to="/sign-in" />}
             />
             <Route path="*" element={<Error />} />
         </Routes>
