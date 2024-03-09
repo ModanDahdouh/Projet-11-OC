@@ -11,10 +11,10 @@ function App() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Signin" element={<Signin />} />
+            <Route path="/signin" element={<Signin />} />
             <Route
                 path="/user"
-                element={token ? <User /> : <Navigate to="/sign-in" />}
+                element={token ? <User /> : <Navigate to="/signin" />}
             />
             <Route path="*" element={<Error />} />
         </Routes>
