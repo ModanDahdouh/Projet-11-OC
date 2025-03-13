@@ -28,7 +28,7 @@ export default function Header() {
                 </Link>
                 {location.pathname === '/user' && token ? (
                   <div>
-                    <Link className="main-nav-item" to="/user"><i className="fa fa-user-circle"></i> {userName}</Link>
+                    <Link className="main-nav-item" to="/user"><i className="fa fa-user-circle"></i>{userName}</Link>
                     <Link className="main-nav-item" to="/" onClick={handleLogOut}><i className="fa fa-sign-out"></i> Sign Out</Link>     
                   </div>
                 ) : (
